@@ -2,6 +2,8 @@ function heureActuele() {
   const date = new Date();
 
   let day = date.toLocaleString("fr-FR", {
+    /* Ajout du jour de la semaine */
+    weekday: "long",
     day: "numeric",
     month: "long",
     year: "numeric",
